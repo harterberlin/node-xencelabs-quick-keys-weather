@@ -1,9 +1,9 @@
 {
   "name": "xencelabs-quick-keys-packages",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "prepare": "run g:husky install",
+    "prepare": "npm run g:husky install",
     "dev": "run build && node ./scripts/watch.mjs",
     "build": "run lerna exec yarn build",
     "test": "run lint && run unit",
