@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "prepare": "npm run g:husky install",
+    "prepare": "cd node_modules\\.bin && husky install",
     "dev": "run build && node ./scripts/watch.mjs",
     "build": "run lerna exec yarn build",
     "test": "run lint && run unit",
